@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Frank Ruhl Libre', 'sans serif';
+}
+
+.header-parent, .nav-parent{
+    background-color: #03484C;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+.nav-parent{
+    background-color: #0E3B3E;
+}
+.header-parent .header,.nav-parent .navigation{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-parent .navigation{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-parent .header .logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.header-parent .header .search form,.nav-parent .navigation .nav-links{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-parent .header .search form{
+    width: 420px;
+}
+.header-parent .header .search form input{
+    width: 370px;
+    height: 37px;
+    padding: 8px;
+    outline: none;
+}
+.header-parent .header .search form button{
+    width: 45px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+}
+.header-parent .header .search form button i{
+    font-size: 20px;
+    color: #03484C;
+    font-weight: bold;
+}
+.header-parent .header .my-account, .nav-parent .navigation .social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.header-parent .header .my-account div i,.nav-parent .navigation .social-media div i{
+    font-size: 22px;
+}
+.nav-parent .navigation  .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+.nav-parent .navigation  .nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 8px;
+    font-size: 15px;
+}
+.category{
+    display: flex;
+    margin-top: 15px;
+}
+.nav-parent .navigation  .category .cat-btn{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.category .cat-btn span{
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+    margin: 2px 0px;
+    transition: all 0.4s;
+}   
+.category .cat-btn.active span:nth-child(2){
+    opacity: 0;
+}
+.category .cat-btn.active span:nth-child(1){
+    transform: rotate(45deg) translateY(8px);
+}
+.category .cat-btn.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-8px);
+}
+.logo{
+    width: 147px;
+}
+
+
+.content{
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+}
+.content-parent{
+   display: flex;
+   flex-direction: column;
+   color:#03484C;
+   height: 80vh;
+   width: 900px;
+   margin: auto;
+   align-items: center;
+   justify-content: space-around;
+   padding: 40px;
+   
+}
+.cat-list.active{
+    width: 200px;
+}
+.cat-list{
+    position: absolute;
+    height: 80vh;
+    width: 0px;
+    background-color: #0E3B3E;
+    left: 0;
+    transition: all 0.4s;
+    overflow: hidden;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+.cat-list ul{
+    list-style-type: none;
+    color: white;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+.cat-list ul li{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.mcs-items-container{
+    background-color: #F8F8F8;
+    height: 500px;
+}
+.mcs-items-container img{
+    width: 250px;
+    height: 250px;
+}
+.content .text{
+    text-align: center;
+   
+}
+.content .text h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+}
+.content .text button{
+    border: 1px white solid;
+    width: 180px;
+    height: 50px;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+  transition: 1s ease-in-out;
+  position: relative;
+  background-color: transparent;
+  background-color: #03484C;
+  margin: 15px;
+}
+
+
+
+.description{
+    display: flex;
+    width: 900px;
+    margin: auto;
+    padding: 40px 0px;
+    justify-content: space-between;
+    height: 80vh;
+    align-items: center;
+}
+.description .text{
+    width: 55%;
+    height: 80%;
+    text-align: left;
+    color: #03484C;
+}
+.description .text h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+}
+.description .text p{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 500;
+}
+.description .picture{
+    position: relative;
+    width: 43%;
+    height: 90%;
+    
+    
+}
+.description .picture img{
+    width: 200px;
+    height: 250px;
+    border-radius: 11px;
+}
+.description .picture img:first-child{
+    position: absolute;
+    right: 10px;
+   
+
+}
+.description .picture img:last-child{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+   
+}
+
+/********************** Help ********************/
+.help-parent{
+    width: 100%;
+    background-color: #0E3B3E;
+    color: white;
+}
+.help-content{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:  30px 0px;
+    position: relative;
+    height: 400px;
+}
+.form form{
+    background-color: #F8F8F8;
+    padding: 30px 20px;
+    border-radius: 11px;
+    width: 350px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.form{
+    position: absolute;
+    left: 0px;
+    top: -30px;
+}
+.form form h1{
+    color: #0E3B3E;
+}
+.form form div{
+    margin: 10px;
+}
+.form form div input, .form form div textarea{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+}
+.btn-send{
+    color: white;
+    background-color: #0E3B3E;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+/*************** Offers *********************/
+.offers{
+    height: 100vh;
+    background-size: contain;
+    padding: 40px;
+    width: 1000px;
+    margin: auto;
+}
+.offers h1{
+    text-align: center;
+    color:#03484C;
+}
+
+.offers .types{
+    
+    width: max-content;
+    margin: auto;
+}
+.offers .types ul{
+    display: flex;
+    list-style-type: none; 
+}
+.offers .types ul li a{
+    text-decoration: none;
+    color: #03484C;
+    font-weight: 200;
+    margin: 10px 20px;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+
+.swiper-slide, .product-container .cart {
+    background-position: center;
+    background-size: cover;
+    width: 260px;
+    height: 350px;
+    background-color: white;
+    margin: 20px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    position: relative;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide  img, .product-container .cart img{
+width: 100%;
+height: 200px;
+border-top-right-radius: 11px;
+}
+.swiper-slide  .desc, .product-container .cart .desc{
+padding: 10px;
+color: rgba(0, 0, 0, 0.8);
+}
+.swiper-slide  .desc .Title ,.product-container .cart .desc .Title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.swiper-slide  .desc .price, .product-container .cart .desc .price{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.swiper-slide  .desc .icons , .product-container .cart .desc .icons{
+position: absolute;
+right: 10px;
+bottom: 10px;
+font-size: 18px;
+}
+.swiper-slide .desc .icons i, .product-container .cart .desc .icons i{
+    margin: 7px;
+}
+
+/*************************** Products **********************/
+.products h1{
+    text-align: center;
+    color: #03484C;
+    margin: 20px 0px;
+}
+.product-container{
+    width: 1000px;
+    margin: auto;
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.black-cover{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 72, 76, 0.9);
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black-cover a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.black-cover a:hover{
+    color: white;
+    font-size: 22px;
+    transition: 0.3s all;
+}
+/*********************** Services *************************/
+.service{
+   
+    width: 100%;
+    height:  400px;
+    
+    
+    background-color: #0E3B3E;
+}
+.service-parent h1{
+    text-align: center;
+    color: #0E3B3E;
+}
+.content-service{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.service .content-service div{
+    background-color: #0E3B3E;
+    border-radius: 11px;
+    color: white;
+    padding: 30px 20px;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    border:  2px solid white;
+}
+h2{
+    margin: 20px 0px;
+    
+}
+.service div p{
+    font-weight: 100;
+}
+.service div span{
+    position: absolute;
+    background-color: #03484C;
+    border-radius: 50%;
+    border: white 2px solid;
+    top: -45px;
+    right: 38%;
+    color: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service div span i{
+    font-size: 25px;
+}
+/***************** Footer Styling ************************/
+.footer{
+    background-color: #03484C;
+    color: white;
+}
+.content-footer{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.content-footer div{
+    flex: 1;
+}
+.content-footer div p{
+    font-weight: 100;
+    font-size: 12px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.content-footer div ul{
+    list-style-type: none;
+    padding: 10px;
+}
+.content-footer div ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 100;
+    font-size: 12px;
+}
+.copyright p{
+    padding: 20px;
+    text-align: center;
+}
+
